@@ -7,9 +7,15 @@
 
 ## Quick Start
 
->   Install Dependencies
- 
-    npm install
+```bash
+# Install Dependencies
+npm install
+
+# Serve on Localhost
+npm start
+
+```
+
       
 
 
