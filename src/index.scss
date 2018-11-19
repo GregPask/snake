@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat");
+
+
+.app {
+    // border: 1px solid red;
+    text-align: center;
+    // max-width: 400px;
+    margin: 5em auto;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #d3d2d2fd;
+}
+
+// GAME BOARD ======================================================
+
+#boardWrap {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+}
+
+#score {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 1.1rem;
+    z-index: 200;
+}
+
+#reset {
+    background-color: rgb(160, 40, 40);
+}
+
+#gameOver {
+    z-index: 200;
+    color: #fff;
+}
+
+.h2  {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    z-index: 200;
+    margin-top: 2em;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    border: 10px solid rgb(6, 28, 100);
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(14, 14, 14, 0);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    z-index: 100;
+    text-align: center;
+  
+}
+
+.content {
+   margin-top: 50%;
+   transform: translate(+14%,-50%);
+    color: #fff;
+    background-color: blue;
+    padding: 15px 20px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.content:hover {
+    // animation: hover 1s;
+    box-shadow: 2px 2px 8px 1px rgba(255, 255, 255, 0.465);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+// Square CLASS STYLES --------------------------------------
+
+.square {
+    // border: 1px solid rgb(235, 0, 0);
+}
+
+.normalSquare {
+    background-color: black;
+}
+
+
+.foodSquare {
+    background-color: rgb(189, 38, 38);
+      border: 1px solid black;
+}
+
+
+
+.snakeSquare {
+    background-color: rgb(21, 134, 21);
+       border: 1px solid black;
+}
+
+
+
+
+@media (max-width: 568px){
+    .board {
+        width: 290px;
+    }
+
+    #boardWrap {
+        width: 290px;
+    }
+}
