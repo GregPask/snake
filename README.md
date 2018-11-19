@@ -3,6 +3,8 @@
 
 > Snake game i made using React JS and Css Grids.
 
+## Live Version
+
 
 
 ## Quick Start
@@ -18,7 +20,9 @@ npm start
 
       
 
+### Author
 
+Greg Pask
 
 
 
