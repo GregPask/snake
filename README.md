@@ -5,6 +5,8 @@
 
 ## Live Version
 
+https://2d-snake-game.netlify.com/
+
 
 
 ## Quick Start
